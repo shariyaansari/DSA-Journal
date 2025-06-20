@@ -25,6 +25,34 @@ public class ThreeSum {
         }
         return new ArrayList<>(set);
     }
+    
+    public static List<List<Integer>> threeSumLessOptimized(int[] nums) {
+        int n = nums.length;
+        Set<List<Integer>> set = new HashSet<>();
+        // Step 1 done - sorting an array
+        Arrays.sort(nums);
+        for (int i = 0; i < n; i++) {
+            
+
+            int left = i + 1;
+            int right = n - 1;
+
+            while (left < right) {
+                int sum = nums[i] + nums[left] + nums[right];
+                if (sum == 0) {
+                    List<Integer> triplet = Arrays.asList(nums[i], nums[left], nums[right]);
+                    set.add(triplet);
+                    left++;
+                    right--;
+                } else if (sum < 0) {
+                    left++;
+                } else {
+                    right--;
+                }
+            }
+        }
+        return new ArrayList<>(set);
+    }
 
     public static List<List<Integer>> threeSumOptimized(int[] nums) {
         int n = nums.length;
@@ -62,7 +90,7 @@ public class ThreeSum {
     }
 
     public static void main(String[] args) {
-        int arr[] = { -1, 0, 1, 2, -1, -4 };
+        int arr[] = { -1,0,1,-1,0,1};
         // System.out.println(threeSumBrute(arr));
         System.out.println(threeSumOptimized(arr));
     }

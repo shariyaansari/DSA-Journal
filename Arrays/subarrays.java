@@ -73,19 +73,14 @@ public class subarrays {
     public static int maxSubArray(int[] nums) {
         int sum = 0;
         int max = Integer.MIN_VALUE;
-        // boolean allNegative = true;
-        // int maxNegative = Integer.MIN_VALUE;
-
         for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
             max = Math.max(sum, max);
             if (sum < 0) {
                 sum = 0;
-            }
-            
-    }
-
-    return max;
+            }    
+        }
+        return max;
     }
     
     public static void main(String[] args) {

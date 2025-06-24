@@ -165,5 +165,10 @@ public class Arrays{
         
         
     }
+
+    public static void sort(char[] chararrr) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'sort'");
+    }
     
 }

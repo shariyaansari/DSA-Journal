@@ -12,7 +12,7 @@ public class Prefix {
                 return "";
             }
         }
-        String firstStr = strs[0];
+        // String firstStr = strs[0];
         StringBuilder prefix = new StringBuilder();
         int minlength = Integer.MAX_VALUE;
         
@@ -32,7 +32,7 @@ public class Prefix {
         }
         return prefix.toString();
     }
-
+    
     public static void main(String[] args) {
         String strs[] = {"flower","fow","flight"};
         System.out.println(longestCommonPrefix(strs));

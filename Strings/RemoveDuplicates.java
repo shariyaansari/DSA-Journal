@@ -28,10 +28,10 @@ public class RemoveDuplicates {
             map[curr-'a'] = true;
             usingRecursion(s, index+1, sb.append(curr), map);
         }
-
-
     }
     public static void main(String[] args) {
-        System.out.println(removeDuplicates("fhjkdjhhg"));
+        String Str = "babad"; 
+        System.out.println(removeDuplicates("babad"));
+        usingRecursion(Str, 0, new StringBuilder(), new boolean[26]);
     }
 }

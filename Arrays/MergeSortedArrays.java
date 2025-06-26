@@ -8,7 +8,22 @@ public class MergeSortedArrays {
         }
         Arrays.sort(nums1);
     }
-    
+    // Try this again tomorrow
+    public static void mergeApproach2(int[] nums1, int m, int[] nums2, int n) {
+        int left = m-1;
+        int right = m+n-1;
+        int nums2Pointer = n-1;
+
+        while(left >= 0 && right < nums1.length){
+            while(nums2Pointer >= 0 && nums1[left] < nums2[nums2Pointer] ){
+                nums1[right] = nums2[nums2Pointer];
+                right--;
+                nums2Pointer--;
+            }
+            nums1[right] =  nums1[left];
+            left--;
+        }
+    }
     public static void main(String[] args) {
         int nums1[] = {1,2,3,0,0,0};
         int nums2[] = {2,4,5};

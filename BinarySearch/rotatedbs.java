@@ -1,6 +1,6 @@
 package BinarySearch;
 
-public class rotatedbs {
+public class RotatedBs {
     // Will not work for duplicate values 
     public static int findPivot(int arr[]){
         int start = 0;

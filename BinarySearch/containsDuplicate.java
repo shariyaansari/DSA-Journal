@@ -12,12 +12,30 @@ public class containsDuplicate {
             else if(arr[mid] < arr[mid-1]){
                 return mid-1;
             }
-            else if(arr[mid] <= arr[start]){
-                end = mid - 1;
+            // if elements at start, end and middle are equal then we skip those 
+            // but what if those elements are pivot
+            if(arr[mid] == arr[start] && arr[start] == arr[end]){
+                // Skip the duplicates
+                // But what if those elements are pivot then what ? 
+                // Check is the start / end is pivot 
+                // Start will be pivot if it's next element is smaller than the start
+                if(arr[start] > arr[start+1]){
+                    return start;
+                }
+                start++;
+                if(arr[end] < arr[end-1]){
+                    return end-1;
+                }
+                end--;
             }
-            else{
+            // Otherwise we know that the left side is sorted and the pivot is on the right
+            else if(arr[start] < arr[mid] || arr[start] == arr[mid] && arr[mid] > arr[end]){
                 start = mid+1;
             }
+            else{
+                end = mid-1;
+            }
+            
         }
         return -1;
     }
@@ -59,8 +77,8 @@ public class containsDuplicate {
         }
     }
     public static void main(String[] args) {
-        int arr[] = {3,4,5,6,2};
+        int arr[] = {2,9,2,2,2};
     
-        System.out.println(returnIndex(arr, 4));
+        System.out.println(returnIndex(arr, 9));
     }   
 }

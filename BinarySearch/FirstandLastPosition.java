@@ -75,7 +75,6 @@ public class FirstandLastPosition {
             else{
                 System.out.println("{"+left+","+right+"}");
             }
-
         }
     }
 

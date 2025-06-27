@@ -1,4 +1,4 @@
-
+// From the book 
 // So write a method to replace all spaces in a string with %20 so we may assume that the string has sufficient space at the end of the array at the end of the array to hold the additional characters and that you are given the true length of the string  
 
 package Strings;

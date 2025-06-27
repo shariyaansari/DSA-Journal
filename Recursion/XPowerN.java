@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/powx-n/description/?envType=problem-list-v2&envId=recursion
 package Recursion;
 
 public class XPowerN {

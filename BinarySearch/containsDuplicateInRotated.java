@@ -1,6 +1,7 @@
+// https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
 package BinarySearch;
 
-public class containsDuplicate {
+public class containsDuplicateInRotated {
     public static int findPivot(int arr[]){
         int start = 0;
         int end = arr.length -1; 

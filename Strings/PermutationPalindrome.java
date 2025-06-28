@@ -20,18 +20,16 @@ public class PermutationPalindrome {
         }
         int countOdd = 0;
         for(int i = 0; i < storecount.length;i++){
-            System.out.print(storecount[i]);
             if(storecount[i] % 2 == 1){
                 countOdd++;
             }
         }
-        System.out.println(countOdd);
-        if(countOdd %2 ==  1 || countOdd == 0){
+        if(countOdd ==  1 || countOdd == 0){
             return true;
         }
         return false;
     }
     public static void main(String[] args) {
-        System.out.println(isPalindromePermutation("maam"));
+        System.out.println(isPalindromePermutation("race car"));
     }
 }

@@ -6,6 +6,29 @@ import java.util.Set;
 
 public class LengthOfLongestSub {
 
+    public int lengthOfLongestSubstringBrute(String s) {
+        int maxlen = 0;
+        for(int i = 0; i < s.length();i++){
+            for(int j = i; j< s.length();j++){
+                if(isUnique(s, i, j)){
+                    maxlen = Math.max(j-i+1, maxlen);
+                }
+            }
+        }
+        return maxlen;
+    }
+    public boolean isUnique(String s,int start, int end){
+        boolean[] seen = new boolean[256];
+        for(int i = start; i <= end;i++){
+            int ch = s.charAt(i);
+            if(seen[ch]){
+                return false;
+            } 
+            seen[ch] = true;
+        }
+        return true;
+    } 
+
     public static int lengthOfLongestSubstring(String s) {
         Set<Character> seen = new HashSet<>();
         int left = 0;
@@ -21,7 +44,7 @@ public class LengthOfLongestSub {
         return maxlen;
     }
     public static void main(String[] args) {
-        String s ="ejbkjdfjh";
+        String s ="abcabc";
         System.out.println(lengthOfLongestSubstring(s));
     }
 }

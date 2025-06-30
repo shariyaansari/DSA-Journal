@@ -9,7 +9,7 @@ public class MergeSortedArrays {
         }
         Arrays.sort(nums1);
     }
-    // Try this again tomorrow
+    // Try this again when revising
     public static void mergeApproach2(int[] nums1, int m, int[] nums2, int n) {
         int left = m-1;
         int right = m+n-1;

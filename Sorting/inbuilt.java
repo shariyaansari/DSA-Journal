@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.Arrays;
 import java.util.*;
 
-public class inbuilt {
+public class Inbuilt {
     public static void main(String[] args) {
         // The collections.reverse order doesn't work on primitive but works on the object of Integer class so therefore we wrote Integer as the datatype 
         Integer arr[] = {5,4,1,3,2};

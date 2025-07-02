@@ -24,7 +24,7 @@ public class QuickSort {
         i++;
         // Swap 
         int temp = pivot;
-        arr[end] = arr[i];
+        arr[end] = arr[i];   // can't use pivot = arr[i] because i want my value to change in original array and not the pivot itself
         arr[i] = temp;
         return i;
     }

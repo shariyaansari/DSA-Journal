@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/pascals-triangle/description/
 package Sorting;
 // Has time complexity - O(n^2)
-public class Bubblesort {
+public class BubbleSort {
     public static void sorting(int arr[]){
         int swap = 0;
         int n = arr.length;

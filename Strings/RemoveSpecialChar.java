@@ -3,15 +3,34 @@ package Strings;
 
 public class RemoveSpecialChar {
     public static void string(String s){
+        // This might fail for some text cases 
+        // StringBuilder res = new StringBuilder();
+        // for(int i = 0 ; i < s.length();i++){
+        //     if(!Character.isLetter(s.charAt(i))){
+        //         continue;
+        //     }
+        //     if(Character.isLetter(s.charAt(i)) && (s.charAt(i-1) == '$' || s.charAt(i-1) == '#' || s.charAt(i-1) == '*')){
+        //         continue;
+        //     }
+        //     res.append(s.charAt(i));
+        // }
+        // System.out.println(res.toString());
+
         StringBuilder res = new StringBuilder();
-        for(int i = 0 ; i < s.length();i++){
-            if(!Character.isLetter(s.charAt(i))){
+        int i = 0;
+        while(i < s.length()){
+            if(s.charAt(i) == '$' || s.charAt(i) == '#' || s.charAt(i) == '*' ){
+                // skip the character
+                i++;
+                if(i < s.length() && Character.isLetter(s.charAt(i))){
+                    i++;
+                }
                 continue;
             }
-            if(Character.isLetter(s.charAt(i)) && (s.charAt(i-1) == '$' || s.charAt(i-1) == '#' || s.charAt(i-1) == '*')){
-                continue;
+            else{
+                res.append(s.charAt(i));
+                i++;
             }
-            res.append(s.charAt(i));
         }
         System.out.println(res.toString());
     }

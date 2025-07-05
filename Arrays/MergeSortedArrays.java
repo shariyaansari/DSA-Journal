@@ -25,6 +25,38 @@ public class MergeSortedArrays {
             left--;
         }
     }
+    // fully works
+    public static void merge2(int[] nums1, int m, int[] nums2, int n) {
+        int temp[] = new int[n+m];
+        // Pointer for nums1
+        int i = 0;
+        // Pointer for nums2
+        int j = 0;
+        // Pointer for temp
+        int k = 0;
+        
+        while(i < m && j < n){
+            if(nums1[i] < nums2[j]){
+                temp[k] = nums1[i];
+                k++; i++;
+            }
+            else{
+                temp[k] = nums2[j];
+                k++; j++;
+            }
+        }
+        while(i < m){
+            temp[k] = nums1[i];
+            k++; i++;
+        }
+        while(j < n){
+            temp[k] = nums2[j];
+            k++; j++;
+        }
+        for(k = 0,i = 0 ; k < temp.length;k++,i++){
+            nums1[i] = temp[k]; 
+        }
+    }
     public static void main(String[] args) {
         int nums1[] = {1,2,3,0,0,0};
         int nums2[] = {2,4,5};

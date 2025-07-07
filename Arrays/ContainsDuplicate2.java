@@ -14,8 +14,27 @@ public class ContainsDuplicate2 {
         }
         return false;
     }
+    public static boolean duplicate(int[] nums, int k) {
+        int n = nums.length;
+        int left = 0; 
+        int right = 1;
+        while(right < n){
+            right = left+1;
+            while(right < n && right <= (left+k)){
+                if(nums[left] == nums[right]){
+                    return true;
+                }
+                right++;
+            }
+            left++;
+            // right++;
+        } 
+        return false;
+    }
+    
     public static void main(String[] args) {
-        int nums[] = {1,3,4,6,7,1};
-        System.out.println(containsNearbyDuplicate(nums, 2));
+        int nums[] = {1,2,3,4,5,6,7,8,9,9};
+        System.out.println(containsNearbyDuplicate(nums, 3));
+        System.out.println(duplicate(nums, 3));
     }   
 }

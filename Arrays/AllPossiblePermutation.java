@@ -6,9 +6,9 @@ import java.util.List;
 
 public class AllPossiblePermutation {
     public List<List<Integer>> permute(int[] nums) {
-    List<List<Integer>> result = new ArrayList<>();
-    permuteHelper(nums, 0, result);
-    return result;
+        List<List<Integer>> result = new ArrayList<>();
+        permuteHelper(nums, 0, result);
+        return result;
     }
 
     private void permuteHelper(int[] nums, int index, List<List<Integer>> result) {

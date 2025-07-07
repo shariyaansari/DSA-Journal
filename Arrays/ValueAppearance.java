@@ -30,11 +30,38 @@ public class ValueAppearance {
         }
         return false;
     }
+    // Approach 3 - can't work for big numbers in array since it takes up space in memory 
+    // Solve this again when done with hashmaps
+    public static boolean approach3(int[] nums){
+        // Largest element for array size 
+        int largest = Integer.MIN_VALUE;
+        int smallest = Integer.MAX_VALUE;
+
+        for(int i = 0; i < nums.length;i++){
+            largest = Math.max(nums[i], largest);
+            smallest = Math.min(nums[i],smallest);
+        }
+    
+        int offset = -smallest;
+        int[] count = new int[largest - smallest +1 ];
+    
+        for (int num : nums) {
+            count[num + offset]++;
+        }
+        
+        for (int i = 0; i < count.length; i++) {
+            if(count[i] > 1){
+                return true;
+            }
+        }
+        return false;
+    }
 
     public static void main(String[] args) {
-        int[] nums = {4,5,6,7,0,1,2};
+        int[] nums = {1000000000,1000000000,11};
         // System.out.println(checkValeappearance(nums));
         // System.out.println(approach2(nums));
+        System.out.println(approach3(nums));
 
         
     }

@@ -2,15 +2,22 @@
 package Arrays;
 
 public class maxproductsubarray {
-    public static void product(int[] arr) {
-        int[] prefix = new int[arr.length];
-        int n = arr.length;
-        prefix[0] = arr[0];
-        for(int i = 1; i < n ; i++){
-            prefix[i] = prefix[i-1] * arr[i];
-            System.out.println(prefix[i]);
+    // Brute
+    public static int product(int[] arr) {
+        int product = 1;
+        int maxProduct = Integer.MIN_VALUE;
+        for(int i = 0;i < arr.length;i++){
+            product = 1;
+            for(int j = i; j < arr.length;j++){
+                product *= arr[j];
+                if(product > maxProduct){
+                    maxProduct = product;
+                }
+            }
         }
+        return maxProduct;
     }
+    // Prefix-suffix approach
     public static int product2(int[] arr) {
         int prefix = 0;
         int suffix = 0;
@@ -28,26 +35,23 @@ public class maxproductsubarray {
         }
         return max;
     }
+    // Using kadane's algo
     public static int approach3(int arr[]){
-        int n = arr.length;
-        int prefix[] = new int[n];
-        prefix[0] = arr[0];
-        for(int i = 1; i < n; i++){
-            prefix[i] = prefix[i-1]* arr[i];
-            // System.out.println(prefix[i]);
-        }
-        int suffix[] = new int[n];
-        suffix[n-1] = arr[n-1];
-        for(int i = n-2; i >= 0; i--){
-            suffix[i] = suffix[i+1]* arr[i];
-            // System.out.println(suffix[i]);
+        int product = 1;
+        int maxProduct = arr[0];
+        int max = arr[0];
+        int min = arr[0];
+        if(arr.length == 1){
+            return arr[0];
         }
 
-        int max = 0;
-        for(int i =0; i<n;i++){
-            max = Math.max(suffix[i], prefix[i]);
+        for(int i = 1;i < arr.length;i++){
+            int temp = max;
+            max = Math.max(arr[i], Math.max(max*arr[i],min*arr[i]));
+            min = Math.min(arr[i], Math.min(temp*arr[i], min*arr[i]));
+            maxProduct = Math.max(max,maxProduct);
         }
-        return max;
+        return maxProduct;
         
     }
     public static void main(String[] args) {

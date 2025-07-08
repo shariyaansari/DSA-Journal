@@ -21,6 +21,7 @@ The problems are categorized by topic for better readability and revision:
 
 📁 JAVA/
 ├── 📂 Arrays/
+├── 📂 Backtracking/
 ├── 📂 Basics/
 ├── 📂 BinarySearch/
 ├── 📂 BitManipulation/

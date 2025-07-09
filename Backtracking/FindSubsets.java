@@ -38,8 +38,6 @@ public class FindSubsets {
         subset(str, i+1, ans); 
         ans.deleteCharAt(ans.length()-1);
         // If choice is No 
-
-        
         subset(str, i+1, ans); 
     }
     public static void subset(int[] nums, int i, List<Integer> current,List<List<Integer>> result){

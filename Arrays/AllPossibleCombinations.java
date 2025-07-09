@@ -14,9 +14,12 @@ public class AllPossibleCombinations {
         }
         // Kaam
         for(int i = index; i < arr.length;i++){
+            // This line is for skipping the duplicates
             if (i > index && arr[i] == arr[i - 1]) continue;
             current.add(arr[i]);
+            // Recursion
             subsets(arr, r, i+1, current, result);
+            // Backtracking
             current.remove(current.size()-1);
         }
         System.out.println(result);

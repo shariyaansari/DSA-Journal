@@ -1,6 +1,6 @@
 package BitManipulation;
 
-import Arrays.returnIndex;
+import Arrays.General.returnIndex;
 
 public class operations {
     public static int getIthBit(int num, int i) {

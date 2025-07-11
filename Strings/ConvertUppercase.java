@@ -13,20 +13,20 @@ public class ConvertUppercase {
     //     System.out.println(modified.toString());
     // }
     public static String Uppercase(String str) {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder res = new StringBuilder();
         char ch = Character.toUpperCase(str.charAt(0));
-        sb.append(ch);
-        for(int i = 1; i < str.length(); i++){
+        res.append(ch);
+        for(int i = 1; i < str.length();i++){
             if(str.charAt(i) == ' ' && i < str.length() - 1){
-                sb.append(str.charAt(i));
+                res.append(str.charAt(i));
                 i++;
-                sb.append(Character.toUpperCase(str.charAt(i)));
+                res.append(Character.toUpperCase(str.charAt(i)));
             }
-            else{
-                sb.append(str.charAt(i));
+            else{                
+                res.append(str.charAt(i));
             }
         }
-        return sb.toString();
+        return res.toString();
     }
     public static void main(String[] args) {
         String str = "hi, i am shariya";

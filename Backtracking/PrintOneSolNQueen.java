@@ -1,12 +1,10 @@
-// All solutions
 package Backtracking;
 
-public class NQueensAllSoln {
-    public static void soln(char[][] board, int row){
+public class PrintOneSolNQueen {
+    public static boolean soln(char[][] board, int row){
         // base case is when rows hit board.length
         if(row == board.length){
-            printBoard(board);
-            return;
+            return true;
         }
 
         // Without considering the possibility of attack just place the queens 
@@ -26,10 +24,13 @@ public class NQueensAllSoln {
         for (int j = 0; j < board.length; j++) {
             if(isSafe(board, row, j)){
                 board[row][j] = 'Q';
-                soln(board, row+1);
+                if(soln(board, row+1)){
+                    return true;
+                }
                 board[row][j] = 'x';
             }
         }
+        return false;
     }
     public static boolean isSafe(char[][] board, int row,int col){
         // We have to check whether it's safe to place the queen Vertically up, diagonally left up and right up 
@@ -73,8 +74,11 @@ public class NQueensAllSoln {
                 board[i][j] = 'x';
             }
         }
-
-        // Call soln for n queens and n rows 
-        soln(board, 0);
+        if(soln(board, 0)){
+            printBoard(board);
+        }
+        else{
+            System.out.println("Soln not possible");
+        }
     }
 }

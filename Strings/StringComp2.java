@@ -21,6 +21,7 @@ public class StringComp2 {
         }
         for (int i = 0; i < writeIndex; i++) {
             Chars[i] = newChars[i];
+            System.out.println(Chars[i]);
         }
 
         return writeIndex;

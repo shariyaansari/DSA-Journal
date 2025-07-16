@@ -5,6 +5,7 @@ import java.util.List;
 
 public class FindSubsets {
     public static void subset(String str, int i, String ans){
+        System.out.println("entering: i = " + i + ",ans= " + ans);
         // Base case 
         if(i == str.length()){
             if(ans.length() == 0){
@@ -19,7 +20,10 @@ public class FindSubsets {
         // If choice is Yes
         subset(str, i+1, ans+str.charAt(i)); 
         // If choice is No 
+        System.out.println("Abt to enter Backtracking: i=" + i + ", ans=" + ans);
         subset(str, i+1, ans); 
+        System.out.println("Backtracking: i=" + i + ", ans=" + ans);
+
     }
     public static void subset(String str, int i, StringBuilder ans){
         // Base case 
@@ -56,14 +60,14 @@ public class FindSubsets {
         subset(nums, i+1, current, result); 
     }
     public static void main(String[] args) {
-        String str = "abc";
+        String str = "ab";
         subset(str, 0, "");
-        subset(str, 0, new StringBuilder());
+        // subset(str, 0, new StringBuilder());
 
 
-        List<List<Integer>> result = new ArrayList<>();
-        int[] nums = {1,2,3};
-        subset(nums, 0, new ArrayList<>(), result);
-        System.out.println(result);
+        // List<List<Integer>> result = new ArrayList<>();
+        // int[] nums = {1,2,3};
+        // subset(nums, 0, new ArrayList<>(), result);
+        // System.out.println(result);
     }
 }

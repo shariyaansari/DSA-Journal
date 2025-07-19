@@ -10,6 +10,7 @@ public class RotationCount {
         }
         while(start <= end){
             int mid = (start+end)/2;
+            
             if(mid < end && arr[mid] > arr[mid+1]){
                 return mid+1;
             }

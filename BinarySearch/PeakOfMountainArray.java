@@ -8,14 +8,14 @@ public class PeakOfMountainArray {
         int end = arr.length - 1;
         while (start < end) {
             int mid = (start + end) / 2;
-            if (arr[mid] > arr[mid + 1]) {
+            // [0,1,3,5,4,3,2] - mid = 5 i.e > 4 so therefore the peak is on the left 
+            if(arr[mid] > arr[mid + 1]) {
                 end = mid;
-            } else {
+            } 
+            // If that's not the case we know ro search on the right
+            else {
                 start = mid + 1;
             }
-            // if(start == efnd){
-            // break;
-            // }
         }
         return start;
     }

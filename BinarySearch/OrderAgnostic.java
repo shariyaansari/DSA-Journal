@@ -5,7 +5,7 @@ public class OrderAgnostic {
         int start = 0; 
         int end = arr.length-1;
         boolean isAsc = arr[start] < arr[end];
-        // System.out.println(isAsc);
+        // System.out.println(isAsc); 
         while(start <= end){
             int mid = (start + end)/2;
             if(arr[mid] == target){

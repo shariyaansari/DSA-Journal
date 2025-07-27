@@ -15,6 +15,7 @@ public class LongestPossibleRoute {
 
         // Updating max path here
         maxPath = Math.max(maxPath, dist);
+        
         System.out.println("Maxpath Updated"+ maxPath);
 
         visited[row][col] = true;
@@ -37,7 +38,7 @@ public class LongestPossibleRoute {
     public static void main(String[] args) {
         int[][] route ={
             {1, 1, 1},
-            {1, 1, 1},
+            {1, 0, 1},
             {1, 1, 1}
         };
         boolean[][] visited = new boolean[route.length][route[0].length];

@@ -18,16 +18,17 @@ public class SumInSortedAndRotated {
         int n = arr.length;
         // Find index of the smallest element which way we know which part to go on 
         // Left = pivot
-        int smallest = Integer.MAX_VALUE;
-        int left = 0;
+        int pivot = -1;
+        
         for(int i = 0 ; i < arr.length-1;i++){
-            if(arr[i] > arr[i+1]){
-                smallest = arr[i+1];
-                left = i+1;
+            if(arr[i] >= arr[i+1]){
+                pivot = i;
+                break;
             }
         }
-        int right = (left-1+n)%n;
-        
+        int left = pivot+1;
+        int right = pivot;
+    
         while(left != right){
             int sum = arr[left] + arr[right];
             if(sum == target){
@@ -47,8 +48,8 @@ public class SumInSortedAndRotated {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,5,7,9,1,1,1};
+        int[] arr = {7,9,1,3,5};
         // System.out.println(isPresent(arr, 6));
-        System.out.println(isPresentApproach2(arr, 16));
+        System.out.println(isPresentApproach2(arr, 0));
     }
 }

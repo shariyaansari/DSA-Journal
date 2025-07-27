@@ -25,6 +25,7 @@ The problems are categorized by topic for better readability and revision:
 ├── 📂 Basics/
 ├── 📂 BinarySearch/
 ├── 📂 BitManipulation/
+├── 📂 LinkedList/
 ├── 📂 OOPS/
 ├── 📂 Patterns/
 ├── 📂 Sorting/

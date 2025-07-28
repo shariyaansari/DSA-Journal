@@ -9,7 +9,6 @@ public class operations {
         } else {
             return 1;
         }
-
         // Or this
         // return (num & (1 << i));
     }

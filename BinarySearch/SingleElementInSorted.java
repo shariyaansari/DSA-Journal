@@ -24,29 +24,25 @@ public class SingleElementInSorted {
     }
     // Worked but failed at some edge cases
     public static int singleNonDuplicate(int[] nums) {
-        int start = 0;
+         int start = 0;
         int end = nums.length - 1;
         while(start < end){
             int mid = (start+end)/2;
-            System.out.println("mid is "+mid);
-            if(mid >= 0 && mid % 2 == 0 && nums[mid] == nums[mid-1]){
-                end = mid-1;
-                System.out.println("end is"+end);
+            if(mid % 2 != 0){
+                mid--;
             }
-            else if(mid>=0 && mid %2 != 0 && nums[mid] == nums[mid-1]){
-                start = mid + 1;
-                System.out.println("start is "+ start);
+            if(nums[mid] == nums[mid+1]){
+                start = mid+2;
             }
             else{
                 end = mid;
-                System.out.println("end = mid  "+ end);
             }
         }
         return nums[start];
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,1,2,3,3,4,4,8,8}; 
+        int[] arr = {1,1,2,2,4}; 
         System.out.println(singleNonDuplicate(arr));
         // singleNonDuplicate(arr);
     }

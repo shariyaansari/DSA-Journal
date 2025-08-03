@@ -60,14 +60,14 @@ public class FindSubsets {
         subset(nums, i+1, current, result); 
     }
     public static void main(String[] args) {
-        String str = "ab";
-        subset(str, 0, "");
+        // String str = "ab";
+        // subset(str, 0, "");
         // subset(str, 0, new StringBuilder());
 
 
-        // List<List<Integer>> result = new ArrayList<>();
-        // int[] nums = {1,2,3};
-        // subset(nums, 0, new ArrayList<>(), result);
-        // System.out.println(result);
+        List<List<Integer>> result = new ArrayList<>();
+        int[] nums = {1,2,2};
+        subset(nums, 0, new ArrayList<>(), result);
+        System.out.println(result);
     }
 }

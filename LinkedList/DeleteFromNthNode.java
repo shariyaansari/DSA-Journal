@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/?envType=problem-list-v2&envId=linked-list
 package LinkedList;
 
 public class DeleteFromNthNode {
@@ -57,6 +58,7 @@ public class DeleteFromNthNode {
         prev.next = prev.next.next;
         // return prev;
     }    
+    // https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/
     public void deletefromMiddle(int n){
         // Calculate size 
         Node temp = head;

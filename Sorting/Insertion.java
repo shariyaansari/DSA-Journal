@@ -5,16 +5,15 @@ public class Insertion {
         // int temp;
         int n = arr.length;
         for(int i = 1; i < n ; i++){
-            int curr = i;
+            int curr = arr[i];
             int prev = i - 1;
 
             // Finding out the correct pos to insert
-            while (prev >= 0 && arr[prev] > arr[curr]){
+            while (prev >= 0 && arr[prev] > curr){
                 arr[prev+1] = arr[prev];
                 prev--;
             }
-            // insertion
-            arr[prev+1] = arr[curr];
+            arr[prev+1] = curr;
         }
         for(int i = 0; i < n; i++){
             System.out.println(arr[i]);

@@ -41,7 +41,6 @@ public class QuickSort {
         
         // right part 
         sort(arr, pivotIndex+1, end);
-          
     }
     public static void main(String[] args) {
         int[] arr = {6,3,9,5,2,8};

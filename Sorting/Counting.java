@@ -6,24 +6,21 @@ public class Counting {
             System.out.print(nums[i]+" ");
         }
     }
-    public static void sort(int[] arr){
-        // Step 1 - get largest 
+    public static void sort(int[] nums){
         int largest = Integer.MIN_VALUE;
-        for(int i = 0; i < arr.length;i++){
-            largest = Math.max(largest,arr[i]);
+        int smallest = Integer.MAX_VALUE;
+        for(int i = 0; i < nums.length;i++){
+            largest = Math.max(largest, nums[i]);
+            smallest = Math.min(smallest,nums[i]);
         }
-        // Make a count array with the size = largest+1 to adjest index
-        // Frequency count = iterate on Original Array
-        int[] count = new int[largest+1];
-        for(int i = 0; i < arr.length;i++){
-            count[arr[i]]++;
-        }  
-        
-        // Sorting - here we will iterate on our count array 
-        int j = 0; //to update elements
+        int[] count = new int[largest - smallest +1];
+        for(int i = 0; i < nums.length;i++){
+            count[nums[i] - smallest]++;
+        }
+        int j = 0;
         for(int i = 0; i < count.length;i++){
             while(count[i] > 0){
-                arr[j] = i;
+                nums[j] = i + smallest;
                 j++;
                 count[i]--;
             }

@@ -28,7 +28,9 @@ The problems are categorized by topic for better readability and revision:
 ├── 📂 LinkedList/
 ├── 📂 OOPS/
 ├── 📂 Patterns/
+├── 📂 Recursion/
 ├── 📂 Sorting/
+├── 📂 Stack/
 └── 📂 Strings/
 
 

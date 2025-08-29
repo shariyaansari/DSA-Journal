@@ -58,6 +58,7 @@ public class DeleteFromNthNode {
         prev.next = prev.next.next;
         // return prev;
     }    
+    
     // https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/
     public void deletefromMiddle(int n){
         // Calculate size 

@@ -31,15 +31,17 @@ public class Palindrome {
         }
     }
     public boolean isPalindrome(){
-        // Size pf of linked list 
+        // Size of of linked list 
         Node temp = head;
         int size = 0;
         while(temp != null){
             temp = temp.next;
             size++;
         }
+
         int[] array = new int[size];
         Node traverse = head;
+        
         while(traverse != null){
             int index = 0;
             array[index++] = traverse.data;
@@ -48,6 +50,7 @@ public class Palindrome {
         for(int i = 0; i < array.length;i++){
             System.out.println(array[i]);
         }
+        
         int left = 0;
         int right = array.length-1;
         while(left <= right){

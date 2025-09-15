@@ -79,7 +79,6 @@ public class MergeSortLL {
             temp = temp.next;
         }
         System.out.println("null");
-
     }
     public static void main(String[] args) {
         MergeSortLL list = new MergeSortLL();

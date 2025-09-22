@@ -72,7 +72,7 @@ public class functionsAndMethods {
             int rem = n % 2  ;
             bin = (int)(bin + (rem * Math.pow(10, power)));
             power++;
-            n /= 10;
+            n /= 2;
         }
         System.out.println(bin);
     }

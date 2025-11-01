@@ -27,6 +27,7 @@ class ActivitySelection{
     public static void activitySelWithoutSorted(int[] start, int[] end){
         int[][] activities = new int[start.length][3];
         ArrayList<Integer> res = new ArrayList<>();
+        
         for(int i = 0; i < start.length;i++){
             activities[i][0] = i;
             activities[i][1] = start[i];

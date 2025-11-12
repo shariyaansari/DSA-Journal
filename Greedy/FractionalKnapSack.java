@@ -1,5 +1,3 @@
-package Greedy;
-
 import java.util.Comparator;
 import java.util.*;
 

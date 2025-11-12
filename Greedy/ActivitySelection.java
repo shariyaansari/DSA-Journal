@@ -1,5 +1,4 @@
-package Greedy;
-
+// https://leetcode.com/problems/maximum-length-of-pair-chain/
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.*;

@@ -7,8 +7,8 @@ public class JobSequencing {
         int id; // 0(A), 1(B), 2(C)
 
         public Job(int i, int d, int p){
-            id = i; 
-            deadline = d; 
+            id = i;
+            deadline = d;
             profit = p;
         }
     }
@@ -20,11 +20,11 @@ public class JobSequencing {
             jobs.add(new Job(i, JobInfo[i][0], JobInfo[i][1]));
         }
         // Collection.sort(jobs, (a,b) -> a.profit - b.profit) //ascending
-        
-        // Only objects can be sorted in descending order that's why we had to do the entire Contructor thingy  
+        // Only objects can be sorted in descending order that's why we had to do the entire Contructor thingy
+
         Collections.sort(jobs, (a,b) -> b.profit - a.profit);
 
-        // Job Sequencing code 
+        // Job Sequencing code
         ArrayList<Integer> res = new ArrayList<>();
         int time = 0;
         for(int i = 0; i < jobs.size(); i++){

@@ -159,16 +159,25 @@ public class Arrays{
         // System.out.println(binarySearch(Sortedarr, 1));
         
         // Reverse an array
-        int arr[] = {2,4,6,8,10};
+        // int arr[] = {2,4,6,8,10};
         // reverse(arr);
         // pairsInArrays(arr);
         
         
     }
 
-    public static void sort(char[] chararrr) {
+    public static void sort(int[] arr) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'sort'");
     }
-    
+
+    public static List<Integer> asList(int i, int j) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'asList'");
+    }
+
+    public static void sort(int[][] intervals, Object object) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'sort'");
+    }
 }

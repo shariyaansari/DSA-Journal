@@ -1,8 +1,8 @@
 // https://leetcode.com/problems/minimum-absolute-difference/
-// package Arrays.General;
-
+package Arrays.General;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.*;
 
 public class MinAbsoluteDiff {
     public List<List<Integer>> minimumAbsDifference(int[] arr) {

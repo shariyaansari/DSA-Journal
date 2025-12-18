@@ -3,7 +3,6 @@ package Sorting;
 public class Selection {
     public static void sorting(int[] arr){
         // Find the smallest for bringing it to the front
-        int smallest = Integer.MAX_VALUE;
         int n = arr.length;
         for (int i = 0; i < n - 1; i++){
             // Set the min pos as the starting index

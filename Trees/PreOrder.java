@@ -2,11 +2,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-import javax.swing.tree.TreeNode;
-
-import Trees.PreOrder.BinaryTree;
-import java.uitl.*;
-
 public class PreOrder {
     // Class for Node
     static class Node {
@@ -63,7 +58,7 @@ public class PreOrder {
             inorder(root.right);
         }
 
-        public static void postorder(TreeNode root, List<Integer> list) {
+        public static void postorder(Node root, List<Integer> list) {
             if (root == null) {
                 return;
             }

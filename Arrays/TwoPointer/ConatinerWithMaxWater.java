@@ -3,7 +3,6 @@ package Arrays.TwoPointer;
 
 public class ConatinerWithMaxWater {
     public static int maxWater(int height[]){
-        int min = 0; 
         int maxArea = 0;
         for(int i = 0;i < height.length;i++){
             for(int j = i+1; j < height.length;j++ ){

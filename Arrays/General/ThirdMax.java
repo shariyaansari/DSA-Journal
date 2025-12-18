@@ -15,7 +15,6 @@ public class ThirdMax {
             arr[n - 1 -i] = temp;
         }
         int count = 1;
-        int prevElem = arr[0];
         for(int i = 1; i < n;i++){
             if(arr[i] != arr[i-1]){
                 count++;

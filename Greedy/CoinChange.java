@@ -1,9 +1,9 @@
-package Greedy;
+
+import java.util.*;
 
 public class CoinChange {
     public int coinChange(int[] coins, int amount){
         Arrays.sort(coins);
-        int index = coins.length-1;
         int count = 0;
         for(int i = coins.length-1; i >= 0; i--){
             if(coins[i] <= amount){

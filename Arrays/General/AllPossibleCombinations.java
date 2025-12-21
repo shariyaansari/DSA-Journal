@@ -26,6 +26,6 @@ public class AllPossibleCombinations {
     }
     public static void main(String[] args) {
         int[] arr = {1,2,3,4};
-        subsets(arr, 2, 0, new ArrayList<>(), new ArrayList<List<Integer>>());
+        subsets(arr, 2, 0, new ArrayList<>(), new ArrayList<>());
     }
 }

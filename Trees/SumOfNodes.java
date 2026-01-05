@@ -1,5 +1,3 @@
-
-
 public class SumOfNodes {
     static class Node{
         int data; 
@@ -11,15 +9,15 @@ public class SumOfNodes {
             this.right = null;
         }
     }
-    public static int sum(Node root){
+    public static int Sum(Node root){
         if(root == null){
             return 0;
         }
-        int ls = sum(root.left);
-        int rs = sum(root.right);
+        int ls = Sum(root.left);
+        int rs = Sum(root.right);
         return ls+rs+root.data;
     }
-    
+
     public static void main(String[] args) {
         Node root = new Node(1);
         root.left = new Node(2);
@@ -27,6 +25,7 @@ public class SumOfNodes {
         root.left.left = new Node(4);
         root.left.right = new Node(5);
         root.right.right = new Node(6);
-        System.out.println(sum(root));
+        System.out.println(Sum(root));
+        System.out.println();
     }
 }

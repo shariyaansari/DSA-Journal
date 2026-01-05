@@ -111,8 +111,8 @@ public class PreOrder {
         // System.out.println(root.right.right.data);
 
         // The printing can be done using preorder() function
-        // tree.preorder(root);
+        tree.preorder(root);
         tree.levelorder(root);
-        // tree.inorder(root);
+        tree.inorder(root);
     }
 }

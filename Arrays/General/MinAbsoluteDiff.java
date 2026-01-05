@@ -2,7 +2,7 @@
 package Arrays.General;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.*;
+// import java.util.*;
 
 public class MinAbsoluteDiff {
     public List<List<Integer>> minimumAbsDifference(int[] arr) {

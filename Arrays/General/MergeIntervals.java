@@ -1,8 +1,8 @@
 package Arrays.General;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.*;
+// import java.util.ArrayList;
+// import java.util.List;
+// import java.util.*;
 
 public class MergeIntervals {
     // public int[][] merge(int[][] intervals) {

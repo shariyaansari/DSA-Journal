@@ -1,4 +1,4 @@
-package LinkedList;
+package LL;
 
 public class SearchRecursive {
     public static class Node{

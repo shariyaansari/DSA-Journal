@@ -1,5 +1,4 @@
-package LinkedList;
-import java.util.LinkedList;
+package LL;
 
 public class MergeSortLL {
     public static class Node {

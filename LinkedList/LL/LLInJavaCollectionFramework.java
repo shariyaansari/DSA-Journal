@@ -1,4 +1,4 @@
-package LinkedList;
+package LL;
 import java.util.LinkedList; //Java Collection framework
 
 public class LLInJavaCollectionFramework {

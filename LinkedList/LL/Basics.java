@@ -1,4 +1,4 @@
-package LinkedList;
+package LL;
 
 class LinkedList{
     // Node class for making nodes 

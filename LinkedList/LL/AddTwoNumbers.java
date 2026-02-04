@@ -1,6 +1,4 @@
-package LinkedList;
-
-import java.util.List;
+package LL;
 
 class AddTwoNumbers{
     public static class Node{

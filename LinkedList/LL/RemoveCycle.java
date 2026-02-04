@@ -1,4 +1,4 @@
-package LinkedList;
+package LL;
 
 public class RemoveCycle {
     public static class Node{

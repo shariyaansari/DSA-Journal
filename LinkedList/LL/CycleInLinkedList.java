@@ -1,8 +1,7 @@
-// https://leetcode.com/problems/middle-of-the-linked-list/
-package LinkedList;
+package LL;
 
-public class FindMiddle {
-    public class Node{
+public class CycleInLinkedList {
+    public static class Node{
         int data;
         Node next;
         public Node(int data){
@@ -31,25 +30,30 @@ public class FindMiddle {
             temp = temp.next;
         }
     }
-    // Slow Fast approach
-    public static Node mid(Node head){
+    public static boolean hasCycle(){
         Node slow = head;
         Node fast = head;
         while(fast != null && fast.next != null){
-            slow = slow.next;
-            fast = fast.next.next;
+            slow = slow.next;   //+1 
+            fast = fast.next.next;  //+2
+            if(fast == slow){
+                return true;
+            }
         }
-        System.out.println(slow.data);
-        return slow;
+        return false;
     }
     public static void main(String[] args) {
-        FindMiddle LL = new FindMiddle();
-        LL.addFirst(5);
-        LL.addFirst(4);
-        LL.addFirst(3);
-        LL.addFirst(2);
-        LL.addFirst(1);
-        // LL.print();
-        LL.mid(head);
+        // CycleInLinkedList ll = new CycleInLinkedList();
+        // ll.addFirst(3);
+        // ll.addFirst(2);
+        // ll.addFirst(7);
+        // ll.addFirst(2);
+        head = new Node(1);
+        head.next = new Node(2);
+        head.next.next = new Node(2);
+        head.next.next.next = head;
+        // 1->2->2->1
+
+        System.out.println(hasCycle());
     }
 }

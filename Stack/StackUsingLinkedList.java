@@ -6,16 +6,13 @@ public class StackUsingLinkedList {
         Node next;
         Node(int data){
             this.data = data;
-            this.next = next;
+            // this.next = next;
         }
     }
-    static class LLStack{
+    public static class LLStack{
         static Node head = null;
         public static boolean isempty(){
-            if(head == null){
-                return true;
-            }
-            return false;
+            return head == null;
         }
         public static void push(int data){
             Node newNode = new Node(data);
@@ -40,11 +37,12 @@ public class StackUsingLinkedList {
             return head.data;
         }
     }
+    // @SuppressWarnings("static-access")
     public static void main(String[] args) {
         LLStack stack = new LLStack();
         stack.push(7);
-        stack.push(9);
-        stack.push(8);
+        // stack.push(9);
+        // stack.push(8);
         
     }
 }

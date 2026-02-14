@@ -15,20 +15,20 @@ public class Oops {
 //    }
 }
 // Acccess modifiers :- Demo
-class BankAccount{
-    public String username;
+// class BankAccount{
+//     public String username;
 
-    // To access the private variable 
-    private String password;
+//     // To access the private variable 
+//     private String password;
 
-    // This is to set the password
-    public void setPassword(String pwd){
-        password = pwd;
-        System.out.println(password);
-    }
+//     // This is to set the password
+//     public void setPassword(String pwd){
+//         password = pwd;
+//         System.out.println(password);
+//     }
 
     
-}
+// }
 
 
 

@@ -3,7 +3,7 @@ import java.util.*;
 
 public class BottomOfTheStack {
     public static void pushAtBottom(Stack<Integer> s, int data){
-        if(s.size() == 0){
+        if(s.isEmpty()){
             s.push(data);
             return;
         }
@@ -20,7 +20,7 @@ public class BottomOfTheStack {
         s.push(3);
         s.push(2);
         pushAtBottom(s, 5);
-        while(s.size() != 0){
+        while(!s.isEmpty()){
             System.out.println(s.pop());
             // s.pop();
         }

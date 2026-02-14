@@ -18,6 +18,7 @@ public class LevelOrder {
             this.right = null;
         }
     }
+
     public static void main(String[] args) {
         Node root = new Node(1);
         root.left = new Node(2);
@@ -29,10 +30,10 @@ public class LevelOrder {
         Queue<Node> queue = new LinkedList<>();
         List<List<Integer>> result = new ArrayList<>();
         // edge case
-        if (root == null) {
-            System.out.println(result);
-            return;
-        }
+        // if (root == null) {
+        //     System.out.println(result);
+        //     return;
+        // }
         // Now Use a queue 
         queue.add(root);
         while (!queue.isEmpty()) {

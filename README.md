@@ -25,15 +25,17 @@ The problems are categorized by topic for better readability and revision:
 ├── 📂 Basics/
 ├── 📂 BinarySearch/
 ├── 📂 BitManipulation/
+├── 📂 Greedy/
+├── 📂 Heap/
 ├── 📂 LinkedList/
 ├── 📂 OOPS/
 ├── 📂 Patterns/
+├── 📂 Queue/
 ├── 📂 Recursion/
 ├── 📂 Sorting/
 ├── 📂 Stack/
 └── 📂 Strings/
-
-
+└── 📂 Trees/
 
 Each folder contains Java solutions related to that topic, written with clean code, comments, and sometimes alternate approaches.
 

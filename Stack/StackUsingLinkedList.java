@@ -37,7 +37,7 @@ public class StackUsingLinkedList {
             return head.data;
         }
     }
-    // @SuppressWarnings("static-access")
+    @SuppressWarnings("static-access")
     public static void main(String[] args) {
         LLStack stack = new LLStack();
         stack.push(7);

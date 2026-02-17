@@ -1,4 +1,4 @@
-package OOPS;
+package oops;
 
 class Automobile{
     // private String drive() {

@@ -24,7 +24,7 @@ public class MergeSortLL {
         return slow;
     }
 
-    // Step 2 -> apply merse sort on left and right half
+    // Step 2 -> apply merge sort on left and right half
     public Node Sort(Node head) {
         if (head == null || head.next == null) {
             return head;

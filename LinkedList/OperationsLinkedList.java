@@ -1,4 +1,4 @@
-
+package LinkedList;
 
 public class OperationsLinkedList {
     public static class Node{

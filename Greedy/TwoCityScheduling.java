@@ -1,6 +1,7 @@
+package Greedy;
 
-import java.util.Comparator;
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class TwoCityScheduling {
     public static int twoCitySchedCost(int[][] costs) {

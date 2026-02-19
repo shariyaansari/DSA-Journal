@@ -1,4 +1,4 @@
-
+package Trees;
 public class ConvertToBalancedBST {
     static class TreeNode {
         int val;

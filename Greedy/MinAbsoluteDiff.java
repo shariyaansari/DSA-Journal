@@ -1,3 +1,5 @@
+package Greedy;
+
 import java.util.*;
 
 public class MinAbsoluteDiff {

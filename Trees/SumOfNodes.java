@@ -1,3 +1,4 @@
+package Trees;
 public class SumOfNodes {
     static class Node{
         int data; 

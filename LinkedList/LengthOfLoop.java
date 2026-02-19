@@ -1,4 +1,4 @@
-
+package LinkedList;
 
 public class LengthOfLoop {
     public static void length(){

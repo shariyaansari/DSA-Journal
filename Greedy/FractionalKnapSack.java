@@ -1,4 +1,5 @@
-import java.util.Comparator;
+package Greedy;
+
 import java.util.*;
 
 public class FractionalKnapSack {

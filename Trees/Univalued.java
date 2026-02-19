@@ -1,3 +1,4 @@
+package Trees;
 public class Univalued {
     static class Node{
         int data; 

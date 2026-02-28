@@ -1,4 +1,4 @@
-package Recursion;
+package recursion;
 // Print Binary String of size n without consecutive ones
 public class BinaryStrings {
     public static void printBinaryStrings(int n, int lastPlace,String str){

@@ -1,5 +1,5 @@
 // Program to find the length of the string using recursion
-package Recursion;
+package recursion;
 
 public class LengthOfStringUsingRecursion {
     public static void length(String str, int len){

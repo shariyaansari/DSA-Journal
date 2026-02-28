@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/power-of-two/description/?envType=problem-list-v2&envId=recursion
-package Recursion;
+package recursion;
 
 public class CheckPowerOfTwo{
     public static boolean isPower(int n){

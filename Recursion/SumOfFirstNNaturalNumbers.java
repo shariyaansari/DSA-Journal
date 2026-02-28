@@ -1,4 +1,4 @@
-package Recursion;
+package recursion;
 
 public class SumOfFirstNNaturalNumbers {
     public static int sum(int n){

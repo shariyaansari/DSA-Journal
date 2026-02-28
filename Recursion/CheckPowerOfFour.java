@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/power-of-four/description/
-package Recursion;
+package recursion;
 
 public class CheckPowerOfFour {
     public static boolean isPowerFour(int n){

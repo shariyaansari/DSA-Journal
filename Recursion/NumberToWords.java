@@ -1,4 +1,4 @@
-package Recursion;
+package recursion;
 
 public class NumberToWords {
     static String[] word = {"zero", "one", "two", "three", "four", "five","six","seven","eight","nine"};

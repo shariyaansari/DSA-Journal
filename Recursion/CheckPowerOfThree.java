@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/power-of-three/
-package Recursion;
+package recursion;
 
 public class CheckPowerOfThree {
     public static boolean isPowerThree(int n){

@@ -1,4 +1,4 @@
-package Recursion;
+package recursion;
 
 public class AllOccurence {
     public static void allOccurence(int[] arr, int i, int key){

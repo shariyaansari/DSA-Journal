@@ -1,4 +1,4 @@
-package Recursion;
+package recursion;
 
 public class CheckSortedArray {
     public static boolean sorted(int arr[], int i){

@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/fibonacci-number/description/?envType=problem-list-v2&envId=recursion
-package Recursion;
+package recursion;
 
 public class Fibonacci {
     public static void fib(int n){

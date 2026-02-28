@@ -1,5 +1,5 @@
 // https://www.geeksforgeeks.org/dsa/tiling-problem/
-package Recursion;
+package recursion;
 
 public class TilingProblem {
     // Not the best Time Complexity but good for basics 

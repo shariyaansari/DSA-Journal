@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/powx-n/description/?envType=problem-list-v2&envId=recursion
-package Recursion;
+package recursion;
 
 public class XPowerN {
     public static int power(int x, int n){

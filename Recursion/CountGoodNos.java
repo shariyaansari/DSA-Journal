@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/count-good-numbers
 package recursion;
 
 public class CountGoodNos {

@@ -1,6 +1,7 @@
 package hashmap;
 
 import java.util.HashMap;
+import java.util.Set;
 
 
 public class Basics {
@@ -38,5 +39,24 @@ public class Basics {
         hm.clear(); //empties out the map 
         System.out.println(hm.isEmpty());
 
+
+        // Iteration on hashmap 
+        HashMap<String, Integer> hm2 = new HashMap<>();
+        hm2.put("a", 10);
+        hm2.put("b", 10);
+        hm2.put("c", 10);
+        // Iterate on hashmap 
+
+        Set<String> keys = hm2.keySet();
+
+        System.out.println(keys);
+
+        // Iterate 
+        for (String k : keys) {
+            System.out.println("keys = "+k+", value = "+ hm2.get(k));
+        } 
+
+        // Entry Set in a hashmap 
+        // -> above we called for k.get for the keys, using entrySet() we don't have to call 
     }    
 }

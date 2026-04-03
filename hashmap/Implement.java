@@ -1,16 +1,12 @@
 package hashmap;
 
 import java.util.*;
-
 public class Implement {
-
+    // <k, V> -> generic types -> can consist of any type 
     static class HashMap<K, V> {
-
         private class Node {
-
             K key;
             V value;
-
             public Node(K key, V value) {
                 this.key = key;
                 this.value = value;
@@ -40,6 +36,7 @@ public class Implement {
             // step 2 -> the index value should be b/w 0 to size-1 
             return Math.abs(hc) % N;
         }
+        
         private int searchInLL(K key, int bi){
             LinkedList<Node> ll = buckets[bi];
             int di = 0;
@@ -69,12 +66,13 @@ public class Implement {
                 LinkedList<Node> ll = oldBucket[i];
                 for(int j = 0; j < ll.size();j++){
                     // remove prev nodes and put them again
-                    Node node = ll.remove();
+                    Node node = ll.get(j);
                     put(node.key, node.value);
                 }
             }
         }
 
+        // O(lambda) -> O(1)
         public void put(K key, V value) {
             // I need a bucket index to put value into the function 
             int bi = hashFunction(key);  
@@ -84,7 +82,7 @@ public class Implement {
                 Node node = buckets[bi].get(di);
                 node.value =value;
             }
-            // Create a new node 
+            // Create a new node
             else{
                 buckets[bi].add(new Node(key, value));
                 n++;
@@ -96,16 +94,81 @@ public class Implement {
             }
         }
 
+        // O(lambda) -> O(1)
         public boolean containsKey(K key) {
-            return false;
+            int bi = hashFunction(key);  
+            int di = searchInLL(key, bi);   // valid or -1 -> to know whether new pair should be created or update the data 
+            if(di != -1){   // valid value
+                return true;  //key exists
+            }
+            // Create a new node 
+            else{
+                return false;
+            }
         }
 
-        // public V remove() {
+        // O(lambda) -> O(1)
+        public V get(K key){
+            int bi = hashFunction(key);  
+            // Step 2 -> search in linked list 
+            int di = searchInLL(key, bi);   // valid or -1 -> to know whether new pair should be created or update the data 
+            if(di != -1){   //key alr exist just update the value 
+                Node node = buckets[bi].get(di);
+                return node.value;
+            }
+            // Create a new node 
+            else{
+                return null;
+            }
+        }
 
-        // }
+        // O(lambda) -> O(1)
+        public V remove(K key) {
+            int bi = hashFunction(key);  
+            // Step 2 -> search in linked list 
+            int di = searchInLL(key, bi);   // valid or -1 -> to know whether new pair should be created or update the data 
+            if(di != -1){   //key alr exist just update the value 
+                Node node = buckets[bi].remove(di);
+                n--;
+                return node.value;
+            }
+            // Create a new node 
+            else{
+                return null;
+            }
+        }
+
+        public ArrayList<K> keySet(){
+            ArrayList<K> keys = new ArrayList<>();
+            for(int i = 0; i < buckets.length;i++){
+                LinkedList<Node> ll = buckets[i];
+                for(Node node : ll){
+                    keys.add(node.key);
+                }
+            }
+            return keys;
+        }
+        public boolean isEmpty(){
+            return n==0;
+        }
     }
 
+
     public static void main(String[] args) {
+        HashMap<String, Integer> hm = new HashMap();
+        hm.put("India", 100);
+        hm.put("Dubai", 150);
+        hm.put("China", 200);
+        hm.put("Nepal", 110);
+
+        ArrayList<String> keys = hm.keySet(); 
+        
+        for(String str : keys){
+            System.out.println(str);
+            System.out.println(hm.get(str));
+        } 
+        System.out.println(hm.remove("India"));
+        System.out.println(hm.get("India"));
 
     }
 }

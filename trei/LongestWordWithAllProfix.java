@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/longest-word-in-dictionary/
 package trei;
 
 public class LongestWordWithAllProfix {

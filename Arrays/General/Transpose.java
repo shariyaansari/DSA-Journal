@@ -1,4 +1,4 @@
-package Arrays.General;
+package arrays.General;
 
 public class Transpose {
     public static void transpose(int[][] matrix) {

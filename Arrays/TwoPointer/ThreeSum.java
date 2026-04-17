@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/3sum/description/
-package Arrays.TwoPointer;
+package arrays.TwoPointer;
 
 import java.util.ArrayList;
 import java.util.Arrays;

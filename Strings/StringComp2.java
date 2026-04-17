@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/string-compression/
-package Strings;
+package strings;
 
 public class StringComp2 {
     public static int compress(char[] Chars) {

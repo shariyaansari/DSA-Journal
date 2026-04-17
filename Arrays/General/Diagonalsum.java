@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/matrix-diagonal-sum/description/
-package Arrays.General;
+package arrays.General;
 
 public class Diagonalsum {
     public static int sum(int matrix[][]){

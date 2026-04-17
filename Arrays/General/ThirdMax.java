@@ -1,4 +1,4 @@
-package Arrays.General;
+package arrays.General;
 import java.util.Arrays;
 
 public class ThirdMax {

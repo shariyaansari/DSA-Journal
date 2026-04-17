@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/minimum-absolute-difference/
-package Arrays.General;
+package arrays.General;
 import java.util.ArrayList;
 import java.util.List;
 // import java.util.*;

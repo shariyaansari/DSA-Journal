@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/unique-paths/description/
-package Backtracking;
+package backtracking;
 // Souts are only written for my understanding
 public class grid {
     public static int countWays(int row, int col, int n, int m){

@@ -1,4 +1,4 @@
-package Basics;
+package basics;
 // Live session 4 is in the pdf loopsandpatters.java
 // Q. Return true for even and false for odd
 // Q. Check if the given number is palindrome or not 

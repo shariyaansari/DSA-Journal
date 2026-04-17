@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/row-with-maximum-ones/
-package Arrays.General;
+package arrays.General;
 
 public class MaxNoOf1 {
     // for sorted array

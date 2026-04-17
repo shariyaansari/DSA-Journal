@@ -1,4 +1,4 @@
-package BinarySearch;
+package binary_search;
 
 public class InfiniteArraySearch {
     public static int ans(int nums[], int target){

@@ -1,4 +1,4 @@
-package BinarySearch;
+package binary_search;
 
 public class RotationCount {
     public static int Count(int arr[]){

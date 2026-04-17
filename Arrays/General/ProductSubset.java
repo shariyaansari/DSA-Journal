@@ -1,5 +1,5 @@
 // Leetcode contest - https://leetcode.com/problems/partition-array-into-two-equal-product-subsets/
-package Arrays.General;
+package arrays.General;
 
 public class ProductSubset {
     // // Works for 714/720 test cases

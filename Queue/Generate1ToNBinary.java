@@ -1,4 +1,4 @@
-package Queue;
+package queue;
 
 public class Generate1ToNBinary {
     public static void bin(int n){

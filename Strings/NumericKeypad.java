@@ -1,5 +1,5 @@
 // https://www.geeksforgeeks.org/convert-sentence-equivalent-mobile-numeric-keypad-sequence/
-package Strings;
+package strings;
 
 public class NumericKeypad {
     public static String printSequence(String[] str, String input){

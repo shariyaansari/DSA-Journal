@@ -1,4 +1,4 @@
-package Strings;
+package strings;
 
 public class ConvertUppercase {
     // public static void Uppercase(String str) {

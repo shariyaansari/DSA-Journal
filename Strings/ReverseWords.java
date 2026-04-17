@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/reverse-words-in-a-string/description/
-package Strings;
+package strings;
 
 public class ReverseWords {
     public static String reverseWords(String s) {

@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/palindromic-substrings/description/
-package Strings;
+package strings;
 
 public class CountPalindromeSubString {
     // public static boolean isPalindrome(String s) {

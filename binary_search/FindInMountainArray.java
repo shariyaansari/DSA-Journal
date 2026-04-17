@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/find-in-mountain-array/description/
-package BinarySearch;
+package binary_search;
 
 public class FindInMountainArray {
     public static int peakofArray(int[] arr) {

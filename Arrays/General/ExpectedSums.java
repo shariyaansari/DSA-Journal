@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/set-mismatch/description/
-package Arrays.General;
+package arrays.General;
 import java.util.Arrays;
 
 public class ExpectedSums {

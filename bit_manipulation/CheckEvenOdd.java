@@ -1,4 +1,4 @@
-package BitManipulation;
+package bit_manipulation;
 
 public class CheckEvenOdd {
     public static boolean isEven(int number){

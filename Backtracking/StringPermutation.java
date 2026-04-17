@@ -1,6 +1,6 @@
 // Find all the possible permutations of a string
 
-package Backtracking;
+package backtracking;
 
 import java.util.ArrayList;
 import java.util.List;

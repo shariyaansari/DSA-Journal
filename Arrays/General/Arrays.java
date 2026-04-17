@@ -1,4 +1,4 @@
-package Arrays.General;
+package arrays.General;
 // Questions included in this file
 // Arrays are passed by reference in a function
 // Linear search on numbers 

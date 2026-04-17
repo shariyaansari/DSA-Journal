@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/subsets-ii
-package Backtracking;
+package backtracking;
 
 import java.util.ArrayList;
 import java.util.List;

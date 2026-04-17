@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/maximum-product-subarray/description/
-package Arrays.PrefixSum;
+package arrays.PrefixSum;
 
 public class maxproductsubarray {
     // Brute

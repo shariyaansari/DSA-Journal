@@ -1,5 +1,5 @@
 // BAsic of 2d arrays 
-package Arrays.General;
+package arrays.General;
 
 import java.util.Scanner;
 

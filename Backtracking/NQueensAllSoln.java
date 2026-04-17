@@ -1,5 +1,5 @@
 // All solutions
-package Backtracking;
+package backtracking;
 
 public class NQueensAllSoln {
     public static void soln(char[][] board, int row){

@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/description/
 
-package Arrays.TwoPointer;
+package arrays.TwoPointer;
 
 public class MaximumPointsCards {
     public static int maxScore(int[] arr, int k) {

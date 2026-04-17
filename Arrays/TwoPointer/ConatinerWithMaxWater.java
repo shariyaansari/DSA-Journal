@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/container-with-most-water/description/
-package Arrays.TwoPointer;
+package arrays.TwoPointer;
 
 public class ConatinerWithMaxWater {
     public static int maxWater(int height[]){

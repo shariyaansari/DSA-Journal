@@ -1,4 +1,4 @@
-package Strings;
+package strings;
 // Print substring
 // Count lowercase Vowels
 public class Basics {

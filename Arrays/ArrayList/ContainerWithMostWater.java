@@ -1,5 +1,5 @@
 // Doing this using ArrayList 
-package Arrays.ArrayList;
+package arrays.ArrayList;
 
 import java.util.*;
 

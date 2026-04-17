@@ -1,4 +1,4 @@
-package Arrays.General;
+package arrays.General;
 
 public class RotateMatrix {
     public static void reverseRow(int[] arr){

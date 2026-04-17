@@ -1,5 +1,5 @@
 // https://www.geeksforgeeks.org/print-all-the-duplicates-in-the-input-string/
-package Strings;
+package strings;
 
 import java.util.*;
 

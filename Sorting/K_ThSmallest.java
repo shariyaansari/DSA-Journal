@@ -1,4 +1,4 @@
-package Sorting;
+package sorting;
 
 public class K_ThSmallest {
     public static int kthSmallest(int[] arr, int k) {

@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/peak-index-in-a-mountain-array/description/
-package BinarySearch;
+package binary_search;
 
 public class PeakOfMountainArray {
     public static int peakIndexInMountainArray(int[] arr) {

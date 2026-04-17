@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/pascals-triangle/description/
-package Sorting;
+package sorting;
 // Has time complexity - O(n^2)
 public class BubbleSort {
     public static void sorting(int arr[]){

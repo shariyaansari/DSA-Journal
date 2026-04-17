@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/first-unique-character-in-a-string/submissions/
-package Queue;
+package queue;
 
 import java.util.*;
 

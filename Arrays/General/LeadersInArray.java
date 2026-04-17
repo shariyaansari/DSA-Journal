@@ -1,4 +1,4 @@
-package Arrays.General;
+package arrays.General;
 
 public class LeadersInArray {
     public static void findLeaders(int[] arr){

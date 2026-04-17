@@ -1,4 +1,4 @@
-package Queue;
+package queue;
 
 public class QueueLL {
     static class Node{

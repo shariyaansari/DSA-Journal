@@ -1,4 +1,4 @@
-package Trees;
+package trees;
 public class TransformTotransform {
     static class Node{
         int data; 

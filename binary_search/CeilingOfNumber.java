@@ -1,6 +1,6 @@
 // https://www.geeksforgeeks.org/problems/ceil-in-a-sorted-array/1
 // https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1
-package BinarySearch;
+package binary_search;
 
 public class CeilingOfNumber {
     public static int findCeil(int[] arr, int x) {

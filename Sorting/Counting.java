@@ -1,4 +1,4 @@
-package Sorting;
+package sorting;
 // Counting sort can have many numbers in quantity but it's range should be smaller
 public class Counting {
     public static void printArr(int[] nums){

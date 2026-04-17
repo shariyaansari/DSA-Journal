@@ -1,4 +1,4 @@
-package BitManipulation;
+package bit_manipulation;
 
 public class converttolowercase {
     public static void main(String[] args) {

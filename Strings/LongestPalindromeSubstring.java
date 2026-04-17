@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/longest-palindromic-substring/
-package Strings;
+package strings;
 
 public class LongestPalindromeSubstring {
     public static boolean isHelper(String s){

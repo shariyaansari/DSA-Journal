@@ -1,6 +1,6 @@
-package BitManipulation;
+package bit_manipulation;
 
-import Arrays.General.returnIndex;
+import arrays.General.returnIndex;
 
 public class FastExponentiation {
     public static int exponentialCalc(int a, int n){

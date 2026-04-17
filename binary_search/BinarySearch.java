@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/binary-search/description/
-package BinarySearch;
+package binary_search;
 
 public class BinarySearch {
     public static int binarySearch(int Sortedarr[], int key){

@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/combinations/submissions/1692226749/
-package Backtracking;
+package backtracking;
 
 import java.util.ArrayList;
 import java.util.List;

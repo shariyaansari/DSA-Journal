@@ -1,4 +1,4 @@
-package Basics;
+package basics;
 // Question 1:In a program,input 3 numbers:A,BandC.You have to output the average of these 3 numbers.
 // Question2:In a program,input the side of a square.You have to output the area of the square
 import java.util.Scanner;

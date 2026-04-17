@@ -1,4 +1,4 @@
-package Basics;
+package basics;
 public class Operators {
     public static void main(String[] args) {
         int x = 9, y = 12;

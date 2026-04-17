@@ -1,5 +1,5 @@
 //  https://www.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1
-package Arrays.SlidingWindow;
+package arrays.SlidingWindow;
 
 public class MaximumSumSubarrayofsizeK {
     public static int maxSum(int nums[], int k){

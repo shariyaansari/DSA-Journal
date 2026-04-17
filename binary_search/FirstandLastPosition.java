@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
-package BinarySearch;
+package binary_search;
 
 public class FirstandLastPosition{
     public static int[] searchRangeBrute(int[] nums, int target){

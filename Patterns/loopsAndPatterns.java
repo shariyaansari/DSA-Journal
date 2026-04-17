@@ -1,4 +1,4 @@
-package Patterns;
+package patterns;
 // Q.Print 1 to n sum using while loop
 // Q.Basic square pattern 
 // Q.Reverse of a number

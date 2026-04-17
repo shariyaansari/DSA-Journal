@@ -1,4 +1,4 @@
-package Arrays.General;
+package arrays.General;
 
 public class SubarraysWithXorK {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Basics;
+package basics;
 // Q.find Binomial Coefficient 
 // Q method Overloading
 // Q.Prime Number

@@ -1,4 +1,4 @@
-package BitManipulation;
+package bit_manipulation;
 
 public class CountNos {
     public static void count(int n) {

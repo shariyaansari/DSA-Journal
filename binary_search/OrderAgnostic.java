@@ -1,4 +1,4 @@
-package BinarySearch;
+package binary_search;
 
 public class OrderAgnostic {
     public static int search(int arr[],int target){

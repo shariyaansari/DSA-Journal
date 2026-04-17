@@ -1,4 +1,4 @@
-package BitManipulation;
+package bit_manipulation;
 
 public class swap {
     //with numbers 

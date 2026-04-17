@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/trapping-rain-water/
-package Arrays.General;
+package arrays.General;
 
 public class trappingwater {
     public static int trap(int[] height) {

@@ -1,5 +1,5 @@
 // https://www.geeksforgeeks.org/problems/pair-sum-in-a-sorted-and-rotated-array/1
-package Arrays.TwoPointer;
+package arrays.TwoPointer;
 public class SumInSortedAndRotated {
     public static boolean isPresent(int[] arr, int target){
         for(int i = 0; i < arr.length;i++){

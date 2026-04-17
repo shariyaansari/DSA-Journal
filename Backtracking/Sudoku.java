@@ -1,6 +1,6 @@
 // Check for a valid sudoku
 // https://leetcode.com/problems/valid-sudoku/description/
-package Backtracking;
+package backtracking;
 
 public class Sudoku {
     public static boolean isSafe(int[][] sudoku, int row, int col, int digit){

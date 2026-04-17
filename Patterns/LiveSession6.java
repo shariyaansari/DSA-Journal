@@ -1,4 +1,4 @@
-package Patterns;
+package patterns;
 // Advanced Pattern
 // Q.       *
 //        * *

@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/valid-palindrome/
-package Strings;
+package strings;
 
 public class Palindrome {
     public static boolean palindrome(String str){

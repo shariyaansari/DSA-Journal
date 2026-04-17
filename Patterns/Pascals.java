@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/pascals-triangle/description/
-package Patterns;
+package patterns;
 
 import java.util.ArrayList;
 import java.util.List;

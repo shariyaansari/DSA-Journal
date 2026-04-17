@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/search-in-rotated-sorted-array/description/
-package BinarySearch;
+package binary_search;
 
 public class RotatedBs {
     // Will not work for duplicate values 

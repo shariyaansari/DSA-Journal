@@ -1,6 +1,6 @@
 
 //https://leetcode.com/problems/search-a-2d-matrix-ii/
-package Arrays.General;
+package arrays.General;
 
 public class SearchinSortedMatrixII {
     public static boolean searchNaive(int[][] matrix,int key) {

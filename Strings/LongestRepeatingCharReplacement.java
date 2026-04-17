@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/longest-repeating-character-replacement/description/
-package Strings;
+package strings;
 
 public class LongestRepeatingCharReplacement {
     public static int characterReplacement(String s, int k) {

@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/combination-sum/
 // https://leetcode.com/problems/combination-sum-ii/
-package Backtracking;
+package backtracking;
 
 import java.util.ArrayList;
 import java.util.List;

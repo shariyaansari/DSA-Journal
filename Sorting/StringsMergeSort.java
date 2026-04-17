@@ -1,4 +1,4 @@
-package Sorting;
+package sorting;
 
 public class StringsMergeSort {
     public static void printArr(String[] arr){

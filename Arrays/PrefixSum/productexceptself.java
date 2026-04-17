@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/product-of-array-except-self/description/
-package Arrays.PrefixSum;
+package arrays.PrefixSum;
 
 public class productexceptself {
      public static int[] productExceptSelf(int[] nums) {

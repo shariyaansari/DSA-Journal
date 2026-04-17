@@ -1,4 +1,4 @@
-package Backtracking;
+package backtracking;
 
 public class BacktrackArrays {
     public static void changeArr(int[] arr, int index,int value){

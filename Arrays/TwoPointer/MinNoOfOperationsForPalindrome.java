@@ -1,5 +1,5 @@
 // https://www.geeksforgeeks.org/dsa/find-minimum-number-of-merge-operations-to-make-an-array-palindrome/
-package Arrays.TwoPointer;
+package arrays.TwoPointer;
 
 public class MinNoOfOperationsForPalindrome {
     // Right but missed some edge cases like - {1,4,5,9,1}

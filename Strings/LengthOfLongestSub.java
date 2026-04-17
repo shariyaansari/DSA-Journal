@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
-package Strings;
+package strings;
 
 import java.util.HashSet;
 import java.util.Set;

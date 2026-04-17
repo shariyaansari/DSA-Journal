@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/power-of-two/description/?envType=problem-list-v2&envId=recursion
-package BitManipulation;
+package bit_manipulation;
 
 public class CheckPowerOfTwo {
     public static boolean checkPower(int n){

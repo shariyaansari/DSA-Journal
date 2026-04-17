@@ -1,4 +1,4 @@
-package Backtracking;
+package backtracking;
 
 public class PrintOneSolNQueen {
     public static boolean soln(char[][] board, int row){

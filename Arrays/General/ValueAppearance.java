@@ -1,4 +1,4 @@
-package Arrays.General;
+package arrays.General;
 // https://leetcode.com/problems/contains-duplicate/description/
 
 import java.util.Arrays;

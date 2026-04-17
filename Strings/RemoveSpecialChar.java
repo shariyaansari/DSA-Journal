@@ -1,5 +1,5 @@
 // So now your string S contains lower case alphabets and special case characters #,*,$ ......now my task is to is to make the string look good in such a way that I choose a special symbol in the given sentence and remove the special symbols and the closest alphabet present to the right of the Character for the special system
-package Strings;
+package strings;
 
 public class RemoveSpecialChar {
     public static void string(String s){

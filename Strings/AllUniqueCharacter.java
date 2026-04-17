@@ -1,7 +1,7 @@
 // It's a question from The book called "cracking the coding interview "
 // Q. IS Unique:Implement algorithm to determine if a string has all unique characters.What if you cannot use additional dataStructures 
 
-package Strings;
+package strings;
 
 public class AllUniqueCharacter{
     // brute

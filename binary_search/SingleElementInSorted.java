@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/single-element-in-a-sorted-array/description/
-package BinarySearch;
+package binary_search;
 
 public class SingleElementInSorted {
     public static int SingleElement(int[] nums){

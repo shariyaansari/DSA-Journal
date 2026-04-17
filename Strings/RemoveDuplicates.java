@@ -1,5 +1,5 @@
 // https://www.geeksforgeeks.org/dsa/remove-duplicates-from-a-given-string/
-package Strings;
+package strings;
 
 public class RemoveDuplicates {
     public static String removeDuplicates(String Str) {

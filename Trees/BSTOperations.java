@@ -1,4 +1,4 @@
-package Trees;
+package trees;
 public class BSTOperations {
 
     static class Node {

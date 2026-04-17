@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/merge-sorted-array/description/
-package Arrays.TwoPointer;
+package arrays.TwoPointer;
 import java.util.Arrays;
 
 public class MergeSortedArrays {

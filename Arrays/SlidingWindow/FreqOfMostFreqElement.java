@@ -1,4 +1,4 @@
-package Arrays.SlidingWindow;
+package arrays.SlidingWindow;
 import java.util.*;
 
 public class FreqOfMostFreqElement {

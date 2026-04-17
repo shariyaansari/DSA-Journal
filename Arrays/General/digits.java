@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/plus-one/description/
-package Arrays.General;
+package arrays.General;
 
 public class digits {
     // fix this later 

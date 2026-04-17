@@ -1,4 +1,4 @@
-package Backtracking;
+package backtracking;
 
 public class NoOfSolNQueens {
     // Since recursion have lots of levels so therefore each time count value will reset....to avoid that we make count as static variable

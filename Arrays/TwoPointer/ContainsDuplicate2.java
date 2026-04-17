@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/contains-duplicate-ii/description/?source=submission-noac
-package Arrays.TwoPointer;
+package arrays.TwoPointer;
 
 public class ContainsDuplicate2 {
     public static boolean containsNearbyDuplicate(int[] nums, int k) {

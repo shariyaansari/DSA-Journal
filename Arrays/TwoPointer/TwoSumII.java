@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
-package Arrays.TwoPointer;
+package arrays.TwoPointer;
 
 public class TwoSumII {
     public static int[] twoSumBrute(int[] numbers, int target) {

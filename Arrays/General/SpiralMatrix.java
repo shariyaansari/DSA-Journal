@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/spiral-matrix/description/
-package Arrays.General;
+package arrays.General;
 
 public class SpiralMatrix {
     public static void Spiral(int matrix[][]){

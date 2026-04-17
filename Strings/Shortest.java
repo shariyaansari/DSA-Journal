@@ -1,4 +1,4 @@
-package Strings;
+package strings;
 
 public class Shortest {
     public static void Spath(String path){

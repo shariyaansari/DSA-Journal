@@ -1,4 +1,4 @@
-package Arrays.General;
+package arrays.General;
 
 public class MissingNumber2DArray {
     public static int[] findMissingAndRepeatedValues(int[][] grid) {

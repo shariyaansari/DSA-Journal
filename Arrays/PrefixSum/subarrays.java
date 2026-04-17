@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/maximum-subarray/description/
-package Arrays.PrefixSum;
+package arrays.PrefixSum;
 
 public class subarrays {
 

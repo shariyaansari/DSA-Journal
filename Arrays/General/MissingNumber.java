@@ -1,4 +1,4 @@
-package Arrays.General;
+package arrays.General;
 
 public class MissingNumber {
     public static void findMissingNum(int[] nums){

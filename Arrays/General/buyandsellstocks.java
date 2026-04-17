@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/1629503928/
 
-package Arrays.General;
+package arrays.General;
 
 public class buyandsellstocks {
     public static int maxProfit(int[] prices) {

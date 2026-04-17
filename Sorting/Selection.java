@@ -1,4 +1,4 @@
-package Sorting;
+package sorting;
 // This is more efficient than bubble sort but has the same complexity as bubble sort 0(n^2)
 public class Selection {
     public static void sorting(int[] arr){

@@ -1,4 +1,4 @@
-package Trees;
+package trees;
 public class MinDistance {
     static class Node{
         int data; 

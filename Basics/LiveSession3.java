@@ -1,4 +1,4 @@
-package Basics;
+package basics;
 
 // Q. Reads the set of integer and prints the sum of odd and even 
 // Q.2 factorial 

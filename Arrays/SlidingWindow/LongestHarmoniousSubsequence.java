@@ -1,5 +1,5 @@
 /*  https://leetcode.com/problems/longest-harmonious-subsequence/description/?envType=problem-list-v2&envId=sliding-window */
-package Arrays.SlidingWindow;
+package arrays.SlidingWindow;
 
 import java.util.Arrays;
 

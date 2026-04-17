@@ -1,5 +1,5 @@
 // https://www.geeksforgeeks.org/problems/valid-compressed-string--170647/1
-package Strings;
+package strings;
 
 public class StringCompression {
     public static String CompressedString(String Str){

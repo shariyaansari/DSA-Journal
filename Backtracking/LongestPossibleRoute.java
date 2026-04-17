@@ -1,6 +1,6 @@
 // https://www.geeksforgeeks.org/dsa/longest-possible-route-in-a-matrix-with-hurdles/
 
-package Backtracking;
+package backtracking;
 
 public class LongestPossibleRoute {
     static int maxPath = 0;

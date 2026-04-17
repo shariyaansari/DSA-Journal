@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/search-in-rotated-sorted-array/description/
-package Arrays.General;
+package arrays.General;
 
 public class returnIndex {
 

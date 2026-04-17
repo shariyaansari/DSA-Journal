@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/
-package BinarySearch;
+package binary_search;
 
 public class SmallestLetterGreaterThanTarget {
     public static char smallest(char[] letters, char key){

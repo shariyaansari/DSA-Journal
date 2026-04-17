@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/valid-anagram/description/
-package Strings;
+package strings;
 
 import java.util.Arrays;
 

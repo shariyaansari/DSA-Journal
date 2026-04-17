@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/reverse-string/description/?envType=problem-list-v2&envId=two-pointers
-package Strings;
+package strings;
 
 public class ReverseString {
     public static void string(int[] s){

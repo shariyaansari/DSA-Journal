@@ -1,4 +1,4 @@
-package BitManipulation;
+package bit_manipulation;
 
 public class ComputeXOR {
     public static int XOR(int n){

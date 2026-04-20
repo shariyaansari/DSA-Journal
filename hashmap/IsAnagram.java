@@ -5,7 +5,7 @@ public class IsAnagram {
     public static boolean isAnagram1(String s, String t) {
         if(s.length() != t.length()){
             return false;
-        }      
+        }
         HashMap<Character, Integer> map1 = new HashMap<>();
         HashMap<Character, Integer> map2 = new HashMap<>();
         for(int i = 0; i < s.length(); i++){

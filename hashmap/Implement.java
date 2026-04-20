@@ -152,10 +152,9 @@ public class Implement {
             return n==0;
         }
     }
-
-
+    
     public static void main(String[] args) {
-        HashMap<String, Integer> hm = new HashMap();
+        HashMap<String, Integer> hm = new HashMap<>();
         hm.put("India", 100);
         hm.put("Dubai", 150);
         hm.put("China", 200);

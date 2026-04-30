@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/middle-of-the-linked-list/
-package LinkedList;
+package linkedlist;
 
 public class FindMiddle {
     public class Node{

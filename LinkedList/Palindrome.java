@@ -1,4 +1,4 @@
-package LinkedList;
+package linkedlist;
 
 public class Palindrome {
     public class Node{

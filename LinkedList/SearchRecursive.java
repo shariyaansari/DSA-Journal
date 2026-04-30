@@ -1,5 +1,5 @@
 
-package LinkedList;
+package linkedlist;
 public class SearchRecursive {
     public static class Node{
         int data;

@@ -1,5 +1,5 @@
 
-package LinkedList;
+package linkedlist;
 public class CycleInLinkedList {
     public static class Node{
         int data;

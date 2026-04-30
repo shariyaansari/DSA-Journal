@@ -1,5 +1,5 @@
 
-package LinkedList;
+package linkedlist;
 public class ReverseALinkedList {
     public class Node{
         int data;

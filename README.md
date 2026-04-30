@@ -1,4 +1,4 @@
-# 🚀 DSA Problem Solving Journey
+# DSA Problem Solving Journey
 
 Welcome to my **Daily DSA Problem Solving Repository**!  
 This repo is a log of all the problems I solve on a daily basis to build strong fundamentals in **Data Structures and Algorithms**.
@@ -20,22 +20,25 @@ This repo is a log of all the problems I solve on a daily basis to build strong 
 The problems are categorized by topic for better readability and revision:
 
 📁 JAVA/
-├── 📂 Arrays/
-├── 📂 Backtracking/
-├── 📂 Basics/
-├── 📂 BinarySearch/
-├── 📂 BitManipulation/
-├── 📂 Greedy/
-├── 📂 Heap/
-├── 📂 LinkedList/
-├── 📂 OOPS/
-├── 📂 Patterns/
-├── 📂 Queue/
-├── 📂 Recursion/
-├── 📂 Sorting/
-├── 📂 Stack/
-└── 📂 Strings/
-└── 📂 Trees/
+├── 📂 arrays/
+├── 📂 backtracking/
+├── 📂 basics/
+├── 📂 binarySearch/
+├── 📂 bitManipulation/
+├── 📂 graphs/
+├── 📂 greedy/
+├── 📂 hashmap/
+├── 📂 heap/
+├── 📂 linkedlist/
+├── 📂 oops/
+├── 📂 patterns/
+├── 📂 queue/
+├── 📂 recursion/
+├── 📂 sorting/
+├── 📂 stack/
+└── 📂 strings/
+└── 📂 trees/
+└── 📂 tries/
 
 Each folder contains Java solutions related to that topic, written with clean code, comments, and sometimes alternate approaches.
 

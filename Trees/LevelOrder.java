@@ -37,7 +37,7 @@ public class LevelOrder {
         // Now Use a queue 
         queue.add(root);
         while (!queue.isEmpty()) {
-            int size = queue.size();
+            int size = queue.size() ;
             List<Integer> level = new ArrayList<>();
             for (int i = 0; i < size; i++) {
                 Node curr = queue.remove();

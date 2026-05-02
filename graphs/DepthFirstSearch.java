@@ -1,8 +1,8 @@
 package graphs;
-import java.util.*;
 
-public class BreadthFirstSearch {
+import java.util.ArrayList;
 
+public class DepthFirstSearch {
     static class Edge {
 
         int src;
@@ -42,21 +42,15 @@ public class BreadthFirstSearch {
         // 6th
         graph[6].add(new Edge(6, 5, 2));
     }
-    // Time complexity = O(V+E)
-    public static void bfs(ArrayList<Edge>[] graph){
-        Queue<Integer> q = new LinkedList<>(); 
-        boolean[] visited = new boolean[graph.length];
-        q.add(0);  //taking source = 0
-        
-        while(!q.isEmpty()){
-            int curr = q.remove(); 
-            if(!visited[curr]){
-                System.out.print(curr + ",");
-                visited[curr] = true;
-                for(int i = 0; i < graph[curr].size();i++){
-                    Edge e = graph[curr].get(i); 
-                    q.add(e.destination);
-                }
+
+    // O(V+E)
+    public static void dfs(ArrayList<Edge>[] graph, int curr, boolean[] visited) {
+        System.out.println(curr);
+        visited[curr] = true;
+        for(int i = 0; i < graph[curr].size(); i++){
+            Edge e = graph[curr].get(i);
+            if(!visited[e.destination]){
+                dfs(graph, e.destination, visited);
             }
         }
     }
@@ -66,6 +60,7 @@ public class BreadthFirstSearch {
             graph[i] = new ArrayList<>();
         }
         createGraph(graph);
-        bfs(graph);
+        boolean[] visited = new boolean[7];
+        dfs(graph,0, visited);
     }
 }

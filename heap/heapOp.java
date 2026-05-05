@@ -3,11 +3,8 @@ package heap;
 import java.util.ArrayList;
 
 public class heapOp {
-
     static class heap {
-
         ArrayList<Integer> arr = new ArrayList<>();
-
         public void add(int data) {
             // Add index last 
             arr.add(data);

@@ -21,7 +21,7 @@ public class MergeSort {
     public static void merge(int[] nums, int start, int mid, int end){
         // left(0,3)=4 elements right(4,6)=3 elements so total -7 elements 
         // 6-0+1 = 7
-        int[] temp = new int[end - start + 1];
+        int[] temp = new int[end - start + 1]; 
         // Making an iterator to interate through left array elements
         int i = start;
         // For right side iterator 

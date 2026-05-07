@@ -41,7 +41,7 @@ public class CycleDetection {
                 }
             }
             // case 2 
-            if (visited[e.dest] && e.dest != parent) {
+            else if (visited[e.dest] && e.dest != parent) {
                 return true;
             }
             // Case 1 -> do nothing if visited is a parent 
@@ -76,8 +76,7 @@ public class CycleDetection {
             graph[i] = new ArrayList<>();
         }
         createGraph(graph);
-        boolean[] visited = new boolean[graph.length];
-        // System.out.println(dfs(graph));
-        dfs(graph);
+        System.out.println(dfs(graph));
+        // dfs(graph);
     }
 }

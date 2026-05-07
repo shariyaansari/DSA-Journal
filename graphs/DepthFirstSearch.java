@@ -16,6 +16,18 @@ public class DepthFirstSearch {
         }
     }
 
+    // O(V+E)
+    public static void dfs(ArrayList<Edge>[] graph, int curr, boolean[] visited) {
+        System.out.println(curr);
+        visited[curr] = true;
+        for (int i = 0; i < graph[curr].size(); i++) {
+            Edge e = graph[curr].get(i);
+            if (!visited[e.destination]) {
+                dfs(graph, e.destination, visited);
+            }
+        }
+    }
+    
     public static void createGraph(ArrayList<Edge>[] graph) {
         // 0th vertex
         graph[0].add(new Edge(0, 1, 5));
@@ -43,17 +55,6 @@ public class DepthFirstSearch {
         graph[6].add(new Edge(6, 5, 2));
     }
 
-    // O(V+E)
-    public static void dfs(ArrayList<Edge>[] graph, int curr, boolean[] visited) {
-        System.out.println(curr);
-        visited[curr] = true;
-        for(int i = 0; i < graph[curr].size(); i++){
-            Edge e = graph[curr].get(i);
-            if(!visited[e.destination]){
-                dfs(graph, e.destination, visited);
-            }
-        }
-    }
     public static void main(String[] args) {
         ArrayList<Edge>[] graph = new ArrayList[7];
         for (int i = 0; i < 7; i++) {

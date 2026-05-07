@@ -49,9 +49,9 @@ public class BreadthFirstSearch {
         q.add(0);  //taking source = 0
         
         while(!q.isEmpty()){
-            int curr = q.remove(); 
+            int curr = q.remove();
+            System.out.print(curr + ",");
             if(!visited[curr]){
-                System.out.print(curr + ",");
                 visited[curr] = true;
                 for(int i = 0; i < graph[curr].size();i++){
                     Edge e = graph[curr].get(i); 

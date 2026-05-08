@@ -17,16 +17,16 @@ public class ConnectedComponents {
         boolean visited[] = new boolean[graph.length];
         for (int i = 0; i < graph.length; i++) {
             if (!visited[i]) {
-                bfsUtil(graph, visited);
+                bfsUtil(graph, visited, i);
                     
             }
         }
     }
 
-    public static void bfsUtil(ArrayList<Edge>[] graph, boolean[] visited) {
+    public static void bfsUtil(ArrayList<Edge>[] graph, boolean[] visited, int start) {
         Queue<Integer> q = new LinkedList<>();
 
-        q.add(0);
+        q.add(start);
         while (!q.isEmpty()) {
             // int size = q.size();
             int curr = q.remove();

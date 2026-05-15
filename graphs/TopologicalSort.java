@@ -50,7 +50,7 @@ public class TopologicalSort {
                 dfsUtil(graph, e.dest, visited, s);
             }
         }
-        s.add(curr);
+        s.push(curr);
     }
 
     public static void main(String[] args) {

@@ -1,8 +1,8 @@
-package graphs;
+// package graphs;
 
 import java.util.*;
 
-public class FloodFill {
+class FloodFill {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
         if(image[sr][sc] == color){
             return image;

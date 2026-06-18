@@ -1,4 +1,4 @@
-// package oops;
+package oops;
 
 public class SuperKeyWord {
     public static void main(String[] args) {

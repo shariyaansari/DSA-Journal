@@ -1,4 +1,4 @@
-// package arrays.SlidingWindow;
+package arrays.SlidingWindow;
 
 public class BinarySubarraysWithSum {
     public static int atMost(int[] nums, int goal){

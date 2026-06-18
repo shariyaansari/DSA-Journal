@@ -39,7 +39,6 @@ public class TopologicalSort {
             ans.add(s.pop());
         }
         System.out.println(ans);
-        
     }
 
     public static void dfsUtil(ArrayList<Edge>[] graph, int curr, boolean[] visited, Stack<Integer> s) {

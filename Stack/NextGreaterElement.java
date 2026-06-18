@@ -5,13 +5,13 @@ import java.util.Stack;
 public class NextGreaterElement {
     public static void brute(int[] arr){
         int[] res = new int[arr.length];
-        int index = 0;
-        boolean stored = false;
+        // int index = 0;
+        // boolean stored = false;
         for (int i = 0; i < arr.length; i++) {
             for(int j = i+1; j < arr.length;j++){
                 if(arr[i] < arr[j]){
                     res[i] = arr[j];
-                    break;
+                    // break;
                 }
                 if(j == arr.length-1){
                     res[j] = -1; 
@@ -46,7 +46,7 @@ public class NextGreaterElement {
         }
     }
     public static void main(String[] args) {
-        int[] arr = {10,9,4,5,6};
+        int[] arr = {1,2};
         // brute(arr);
         opt(arr);
     }

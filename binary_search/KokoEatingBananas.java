@@ -1,3 +1,4 @@
+package binary_search;
 class KokoEatingBananas{
     public static boolean Helper(int[] piles, int h, int k) {
         long hr = 0;

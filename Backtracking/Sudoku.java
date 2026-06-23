@@ -29,43 +29,45 @@ public class Sudoku {
         }
         return true;
     }
-    public static boolean validSudoku(int[][] sudoku, int row, int col){
+
+    public static boolean validSudoku(int[][] sudoku, int row, int col) {
         // Base case
-        if(row == 9){
+        if (row == 9) {
             return true;
         }
         // Kaam 
         // Assign values to row
         int nextrow = row;
-        int nextcol = col+1;
-        if(col+1 == 9){
-            nextrow = row+1;
+        int nextcol = col + 1;
+        if (col + 1 == 9) {
+            nextrow = row + 1;
             nextcol = 0;
         }
 
         // Condition for when my sudoku alr has value other than 0;
-        if(sudoku[row][col] != 0){
+        if (sudoku[row][col] != 0) {
             // Directly call for next level 
             return validSudoku(sudoku, nextrow, nextcol);
         }
 
         // Till the value of my digit is 9 i have to try placing my values
-        for(int digit = 1 ; digit <= 9; digit++){
-            // Make a safe fiunction which checks whether it's safe to placee the digit or not 
-             if(isSafe(sudoku, row, col, digit)){
+        for (int digit = 1; digit <= 9; digit++) {
+            // Make a safe function which checks whether it's safe to placee the digit or not 
+            if (isSafe(sudoku, row, col, digit)) {
                 sudoku[row][col] = digit;
                 // Recursion 
                 // If this returns true then solution exists
-                if(validSudoku(sudoku, nextrow, nextcol)){
+                if (validSudoku(sudoku, nextrow, nextcol)) {
                     return true;
-                }else{
+                } else {
                     // If the above function doesn't return true then I will let my digit be 0;
                     sudoku[row][col] = 0;
                 }
-             }
+            }
         }
         return false;
     }
+    
     public static void printSudoku(int[][] sudoku){
         for(int i = 0; i <9;i++){
             for(int j =0; j <9;j++){

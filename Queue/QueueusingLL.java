@@ -1,14 +1,16 @@
 package queue;
 
 public class QueueUsingLL {
-    static class Node{
-        int data; 
-        Node next; 
-        Node(int data){
+    static class Node {
+        int data;
+        Node next;
+
+        Node(int data) {
             this.data = data;
             this.next = null;
         }
     }
+    
     static class Queue{
         static Node head = null;
         static Node tail = null;

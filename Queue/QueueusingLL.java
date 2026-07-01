@@ -1,6 +1,6 @@
 package queue;
 
-public class QueueUsingLL {
+public class QueueusingLL {
     static class Node {
         int data;
         Node next;

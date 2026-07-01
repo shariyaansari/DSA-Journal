@@ -11,9 +11,12 @@ public class StackUsingLinkedList {
     }
     public static class LLStack{
         static Node head = null;
+        // O(1)
         public static boolean isempty(){
             return head == null;
         }
+
+        // O(1)
         public static void push(int data){
             Node newNode = new Node(data);
             if(head == null){
@@ -22,6 +25,8 @@ public class StackUsingLinkedList {
             newNode.next = head;
             head = newNode;
         }
+        
+        // O(1)
         public static int pop(){
             if(isempty()){
                 return -1;
@@ -30,6 +35,8 @@ public class StackUsingLinkedList {
             head = head.next;
             return top;
         }
+        
+        // O(1)
         public static int peek(){
             if(isempty()){
                 return -1;

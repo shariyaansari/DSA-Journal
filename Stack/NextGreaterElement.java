@@ -25,6 +25,7 @@ public class NextGreaterElement {
             System.out.println(res[i]);
         }
     }
+
     // Optimized approach 
     public static void opt(int[] arr){
         Stack<Integer> s = new Stack<>();
@@ -45,6 +46,29 @@ public class NextGreaterElement {
             System.out.println(res[i]);
         }
     }
+    // Next greater 2 
+    public static int[] nextGreaterElements(int[] nums) {
+        Stack<Integer> s = new Stack<>();
+        int n = nums.length;
+        int[] result = new int[n];
+        for (int i = 2 * n - 1; i >= 0; i--) {
+            int idx = i % n;
+            while (!s.isEmpty() && s.peek() <= nums[idx]) {
+                s.pop();
+            }
+            // no need to update 2*n times, only update when i < n
+            if (i < n) {
+                if (s.isEmpty()) {
+                    result[idx] = -1;
+                } else {
+                    result[idx] = s.peek();
+                }
+            }
+            s.push(nums[idx]);
+        }
+        return result;
+    }
+    
     public static void main(String[] args) {
         int[] arr = {1,2};
         // brute(arr);

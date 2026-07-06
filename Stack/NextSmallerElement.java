@@ -26,6 +26,5 @@ class NextSmallerElement {
     public static void main(String[] args) {
         int[] arr = {2, 10, 12, 1, 11};
         nextSmallerElements(arr);
-        
     }
 }

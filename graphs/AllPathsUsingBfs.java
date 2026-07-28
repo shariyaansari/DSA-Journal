@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class AllPaths {
+public class AllPathsUsingBfs {
     static class Edge {
         int src;
         int dest;

@@ -38,7 +38,7 @@ public class BellmanFord2 {
             }
         }
         // O(V) -> outer loop 
-        // Total tc -> O(V) * O(E) 
+        // Total tc -> O(V) * O(E)
         for (int i = 0; i < vertice-1; i++) {
             // O(E) -> both loop getting the edge
 

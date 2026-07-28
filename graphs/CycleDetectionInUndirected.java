@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class CycleDetection {
+public class CycleDetectionInUndirected {
 
     static class Edge {
 
@@ -15,6 +15,56 @@ public class CycleDetection {
         }
     }
 
+    static class Pair {
+
+        int curr, parent;
+
+        Pair(int curr, int parent) {
+            this.curr = curr;
+            this.parent = parent;
+        }
+    }
+
+    // Using bfs
+    public static boolean bfs(ArrayList<Edge>[] graph) {
+        boolean[] visited = new boolean[graph.length];
+        for (int i = 0; i < graph.length; i++) {
+            if (!visited[i]) {
+                if (bfsUtil(graph, i, visited)) {
+                    return true;
+                    // cycle exists in one of the parts
+                }
+            }
+        }
+        return false;
+    }
+
+    public static boolean bfsUtil(ArrayList<Edge>[] graph, int src, boolean[] visited) {
+        Queue<Pair> q = new LinkedList<>();
+        q.add(new Pair(src, -1));
+        visited[src] = true;
+        while (!q.isEmpty()) {
+            int size = q.size();
+            Pair remove = q.remove();
+            int curr = remove.curr;
+            int parent = remove.parent;
+
+            for (int i = 0; i < graph[curr].size(); i++) {
+                Edge e = graph[curr].get(i);
+                if(!visited[e.dest]){
+                    visited[e.dest] = true;
+                    q.add(new Pair(e.dest, curr));
+                }
+                if(visited[e.dest] && e.dest != parent){
+                    return false;
+                }                
+            }
+
+        }
+        return true;
+    }
+
+    // dfs
     public static boolean dfs(ArrayList<Edge>[] graph) {
         boolean[] visited = new boolean[graph.length];
         for (int i = 0; i < graph.length; i++) {
@@ -35,12 +85,12 @@ public class CycleDetection {
             Edge e = graph[curr].get(i);
             // case 3. neighbour not visited
             if (!visited[e.dest]) {
+                // Return true directly if true is recieved
                 if (dfsUtil(graph, e.dest, curr, visited)) {
                     // System.out.println("true");
                     return true;
                 }
-            }
-            // case 2 
+            } // case 2 
             else if (visited[e.dest] && e.dest != parent) {
                 return true;
             }

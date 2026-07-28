@@ -23,6 +23,7 @@ public class WordLadder2 {
         return list;
     }
     
+        
     public static void main(String[] args) {
         
     }

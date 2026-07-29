@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-class ShortestPathInDAG {
+class ShortestPathInDAGUsingTopo {
 
     static class Pair {
 

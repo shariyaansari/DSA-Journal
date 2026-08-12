@@ -1,4 +1,4 @@
-// package graphs;
+// package graphs.ShortestPath;
 
 import java.util.*;
 
@@ -24,7 +24,7 @@ class BellmanFord {
                 }
             }
         }
-        
+
         // just to print the nodes
         for(int i = 0; i < dist.length; i++){
             System.out.println(dist[i]);
